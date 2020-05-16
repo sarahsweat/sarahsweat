@@ -1,10 +1,10 @@
 export const data = {
   title: 'Sarah Sweat',
-  subTitle: 'Software Engineer  |  Teacher  |  Blogger',
+  subTitle: 'Software Engineer  ~  Teacher  ~  Blogger',
   contentBlocks: [
     {
       title: 'About Me',
-      description: ['In college, I studied Mechanical Engineering, but I always loved my coding classes the most. Instead of applying code to hardware, I decided to make a switch and learn how to apply my coding skills on the web development side. I moved to New York and graduated from Flatiron Schools Web Development Immersive program. I joined Spoon University after that and have since transitioned to other Discovery brands, primarily Food Network. I am continuing to learn and grow every day in this, knowing I made the right switch.']
+      description: ["In college I studied Mechanical Engineering, but I always loved my coding classes the most. Instead of applying code to hardware, I decided to make a switch and learn how to apply my coding skills on the software side. I moved to New York City and graduated from Flatiron School's Web Development Immersive program. I then joined Spoon University and have since transitioned to other Discovery brands and products. My primary focus for the past year or so has been working on their newest DTC product, Food Network Kitchen, both on the content management side as well as the consumer facing web app. I am continuing to learn and grow every day in this industry, knowing I made the right switch to software."]
     },
     {
       title: 'Education',

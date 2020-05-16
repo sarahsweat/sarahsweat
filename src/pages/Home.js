@@ -55,7 +55,7 @@ const ScrollingWrapper = styled.div`
 
 const HeadingWrapper = styled.div`
   background-color: ${p => p.theme.colors.accent2};
-  border-bottom: solid 3px ${p => p.theme.colors.secondary};
+  border-bottom: solid 2px ${p => p.theme.colors.secondary};
   display: flex;
   flex-direction: column;
   align-items: center;

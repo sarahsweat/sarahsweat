@@ -1,19 +1,19 @@
 const colorPalette = {
-  pink: '#D55096',
-  lightPink: '#E278A0',
-  purple: '#A03991',
-  lavender: '#AE9CC4',
+  navy: '#5050A0',
+  grey: '#715F72',
+  purple: '#AF55A5',
+  lightPurple: '#BF90E0',
   lightLavender:'#F0ECF4',
-  lightBlue: '#A7C1D0'
+  lightBlue: '#D5E5F2'
 }
 
 export const SSTheme = {
   colors: {
-    primary: colorPalette.pink,
-    secondary: colorPalette.lavender,
-    accent1: colorPalette.purple,
+    primary: colorPalette.purple,
+    secondary: colorPalette.lightPurple,
+    accent1: colorPalette.navy,
     accent2: colorPalette.lightBlue,
-    accent3: colorPalette.lightPink,
+    accent3: colorPalette.grey,
     accent4: colorPalette.lightLavender,
   },
   colorPalette,

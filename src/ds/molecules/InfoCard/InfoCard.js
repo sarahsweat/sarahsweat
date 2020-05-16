@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import { SubHeading, BodyText } from '../../atoms'
+import { SectionHeading, BodyText } from '../../atoms'
 
 const InfoCard = ({ title, description }) => {
   return (
     <Wrapper>
-      <SubHeading>{title}</SubHeading>
+      <SectionHeading>{title}</SectionHeading>
       {description.length > 0 ? (
-          description.map(desc => <BodyText>{desc}</BodyText>)
+          description.map((desc, idx) => <BodyText key={idx}>{desc}</BodyText>)
         ) : (
           <div>
             <a href="https://www.linkedin.com/in/sarah-sweat/" target="_blank" rel='noopener noreferrer'>
@@ -31,7 +31,7 @@ const Wrapper = styled.div`
   width: 80%;
   border-radius: 12px;
   background-color: ${p => p.theme.colors.accent4};
-  border: solid 4px ${p => p.theme.colors.secondary};
+  border: solid 3px ${p => p.theme.colors.secondary};
   padding: 20px;
   box-shadow: 7px 5px 5px ${p => p.theme.colors.primary};
   margin: 10px 20px;

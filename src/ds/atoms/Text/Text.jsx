@@ -42,15 +42,35 @@ export const SubHeading = styled.p`
   }
   font-family: Helvetica, sans-serif;
   font-weight: 700;
+  letter-spacing: .8px;
   color: ${p => p.theme.colors.accent1};
   text-shadow: 2px 2px 3px ${p => p.theme.colors.accent4};
   margin: 0;
   padding: 0%;
 `
 
+export const SectionHeading = styled.p`
+  font-size: 15px;
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  color: ${p => p.theme.colors.accent1};
+  text-shadow: 2px 2px 3px ${p => p.theme.colors.accent4};
+  margin: 0;
+  padding: 0%;
+  border-bottom: solid 1px ${p => p.theme.colors.accent1};
+
+`
+
+
 export const BodyText = styled.p`
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 500;
+  letter-spacing: .8px;
+  line-height: 1.5rem;
   @media (min-width: 768px) {
     font-size: 17px;
   }
