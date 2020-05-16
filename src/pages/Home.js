@@ -7,21 +7,23 @@ const Home = () => {
   const { subTitle, contentBlocks } = data
   return (
     <Wrapper>
-      <HeadingWrapper>
-        <Title />
-        <SubHeading>{subTitle}</SubHeading>
-      </HeadingWrapper>
-      <ContentWrapper>
-        {
-          contentBlocks.map(block => (
-            <InfoCard
-              key={block.title}
-              title={block.title}
-              description={block.description}
-             />
-          ))
-        }
-      </ContentWrapper>
+      <ScrollingWrapper>
+        <HeadingWrapper>
+          <Title />
+          <SubHeading>{subTitle}</SubHeading>
+        </HeadingWrapper>
+        <ContentWrapper>
+          {
+            contentBlocks.map(block => (
+              <InfoCard
+                key={block.title}
+                title={block.title}
+                description={block.description}
+              />
+            ))
+          }
+        </ContentWrapper>
+      </ScrollingWrapper>
     </Wrapper>
   )
 }
@@ -34,14 +36,22 @@ const Wrapper = styled.div`
   background-color: ${p => p.theme.colors.accent2};
   width: 100vw;
   height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: hidden;
   margin: 0%;
   padding: 0%;
+
+`
+
+const ScrollingWrapper = styled.div`
+  height: 100%;
+  width: inherit;
+  overflow-y: auto;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
 `
+
 
 const HeadingWrapper = styled.div`
   background-color: ${p => p.theme.colors.accent2};
@@ -60,8 +70,8 @@ const HeadingWrapper = styled.div`
 `
 
 const ContentWrapper = styled.div`
-  margin: .5rem;
-  height: auto;
+  margin: .75rem;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;

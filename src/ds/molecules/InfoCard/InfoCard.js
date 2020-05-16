@@ -28,13 +28,13 @@ export default InfoCard
 InfoCard.displayName = "InfoCard"
 
 const Wrapper = styled.div`
-  width: 85%;
+  width: 80%;
   border-radius: 12px;
   background-color: ${p => p.theme.colors.accent4};
   border: solid 4px ${p => p.theme.colors.secondary};
   padding: 20px;
   box-shadow: 7px 5px 5px ${p => p.theme.colors.primary};
-  margin: 10px;
+  margin: 10px 20px;
   @media (min-width: 768px) {
     width: 60%;
     box-shadow: 10px 8px 4px ${p => p.theme.colors.primary};
