@@ -11,12 +11,16 @@ export const data = {
       description: ['Flatiron School - Web Development Immersive', 'Florida State University - MS Mechanical Engineering, Minor in Mathematics']
     },
     {
+      title: 'Links',
+      description: []
+    },
+    {
       title: 'Technical Skills',
       description: ['Javascript - React - AWS (DynamoDB, AppSync, Amplify, Lambda) - Styled Components - Storybook - Nextjs - Ruby - Rails - Redux - MobX - C++ - SQL - HTML - CSS']
     },
     {
       title: 'Interests',
-      description: ['Travel - Photography - Code - Music - Exploring New York - Golf - Reading']
+      description: ['Travel - Photography - Code - Attending Tech Events - Speaking - Exploring New York City - Music - Golf - Reading']
     },
   ]
 

@@ -6,7 +6,19 @@ const InfoCard = ({ title, description }) => {
   return (
     <Wrapper>
       <SubHeading>{title}</SubHeading>
-      {description.map(desc => <BodyText>{desc}</BodyText> )}
+      {description.length > 0 ? (
+          description.map(desc => <BodyText>{desc}</BodyText>)
+        ) : (
+          <div>
+            <a href="https://www.linkedin.com/in/sarah-sweat/" target="_blank" rel='noopener noreferrer'>
+              <BodyText>LinkedIn</BodyText>
+            </a>
+            <a href="https://medium.com/@sarahsweat" target="_blank" rel='noopener noreferrer'>
+              <BodyText>Blog</BodyText>
+            </a>
+          </div>
+        )
+      }
     </Wrapper>
   )
 }

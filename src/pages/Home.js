@@ -31,6 +31,7 @@ export default Home
 Home.displayName = "Home"
 
 const Wrapper = styled.div`
+  position: absolute;
   background-color: ${p => p.theme.colors.accent2};
   width: 100vw;
   height: 100vh;
@@ -40,27 +41,32 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  * {
-    box-sizing: border-box;
-  }
 `
 
 const HeadingWrapper = styled.div`
-  padding: 5px;
-  margin: 5;
-  @media (min-width: 768px) {
-    padding: 20px;
-    margin: 20px 150px;
-  }
-  border-bottom: solid 2px ${p => p.theme.colors.secondary};
+  position: absolute;
+  background-color: ${p => p.theme.colors.accent2};
+  border-bottom: solid 3px ${p => p.theme.colors.secondary};
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+  @media (min-width: 768px) {
+    width: 88%;
+    padding: 20px;
+  }
 `
 
 const ContentWrapper = styled.div`
+  padding-top: 100px;
+  @media (min-width: 768px) {
+    padding-top: 210px;
+  }
   margin: .5rem;
-  overflow: auto;
+  height: 100%;
+  overflow: scroll;
   display: flex;
   flex-direction: column;
   align-items: center;
