@@ -1,6 +1,6 @@
 const colorPalette = {
   pink: '#D55096',
-  lightPink: '#EFECF5',
+  lightPink: '#E278A0',
   purple: '#A03991',
   lavender: '#AE9CC4',
   lightLavender:'#F0ECF4',

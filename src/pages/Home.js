@@ -1,26 +1,26 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Heading, SubHeading, BodyText } from '../ds'
+import {  SubHeading, InfoCard, Title } from '../ds'
+import { data } from '../data'
 
 const Home = () => {
+  const { subTitle, contentBlocks } = data
   return (
     <Wrapper>
       <HeadingWrapper>
-        <Heading>Sarah Sweat</Heading>
-        <SubHeading>
-          Software Engineer  |  Teacher  |  Blogger
-        </SubHeading>
+        <Title />
+        <SubHeading>{subTitle}</SubHeading>
       </HeadingWrapper>
       <ContentWrapper>
-        <SubHeading>About Me</SubHeading>
-        <BodyText>
-          In college, I studied Mechanical Engineering, but I always loved my coding
-          classes the most. Instead of applying code to hardware, I decided to make
-          a switch and learn how to apply my coding skills on the web development side.
-          I joined Spoon University initially and have since transitioned to other
-          Discovery brands, primarily Food Network. I am continuing to learn and grow
-          every day, knowing I made the right choice.
-        </BodyText>
+        {
+          contentBlocks.map(block => (
+            <InfoCard
+              key={block.title}
+              title={block.title}
+              description={block.description}
+             />
+          ))
+        }
       </ContentWrapper>
     </Wrapper>
   )
@@ -31,19 +31,24 @@ export default Home
 Home.displayName = "Home"
 
 const Wrapper = styled.div`
-  background-color: ${p => p.theme.colors.accent4};
+  background-color: ${p => p.theme.colors.accent2};
   width: 100vw;
   height: 100vh;
   overflow: hidden;
   margin: 0%;
   padding: 0%;
+  * {
+    box-sizing: border-box;
+  }
 `
 
 const HeadingWrapper = styled.div`
   padding: 20px;
   margin: 20px 200px;
   border-bottom: solid 2px ${p => p.theme.colors.secondary};
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
 
 const ContentWrapper = styled.div`
