@@ -14,7 +14,7 @@ const Home = () => {
       <ContentWrapper>
         <SubHeading>About Me</SubHeading>
         <BodyText>
-          In college, I studied Mechanical Engineering, but always loved my coding
+          In college, I studied Mechanical Engineering, but I always loved my coding
           classes the most. Instead of applying code to hardware, I decided to make
           a switch and learn how to apply my coding skills on the web development side.
           I joined Spoon University initially and have since transitioned to other
@@ -31,7 +31,7 @@ export default Home
 Home.displayName = "Home"
 
 const Wrapper = styled.div`
-  background-color: #0F292F;
+  background-color: ${p => p.theme.colors.accent4};
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -42,7 +42,7 @@ const Wrapper = styled.div`
 const HeadingWrapper = styled.div`
   padding: 20px;
   margin: 20px 200px;
-  border-bottom: solid 2px #CB2D6F;
+  border-bottom: solid 2px ${p => p.theme.colors.secondary};
   text-align: center;
 `
 
