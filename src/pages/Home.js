@@ -37,6 +37,9 @@ const Wrapper = styled.div`
   overflow: hidden;
   margin: 0%;
   padding: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   * {
     box-sizing: border-box;
   }
@@ -56,13 +59,9 @@ const HeadingWrapper = styled.div`
 `
 
 const ContentWrapper = styled.div`
-  margin: 0;
+  margin: .5rem;
+  overflow: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: calc(100% - 100px);
-  @media (min-width: 768px) {
-    height: calc(100% - 245px);
-  }
-  overflow-y: scroll;
 `
