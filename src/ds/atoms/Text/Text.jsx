@@ -25,12 +25,13 @@ const MARGIN_STYLES = css`
 export const Heading = styled.h1`
   ${MARGIN_STYLES}
   font-size: 45px;
+  text-shadow: 1px 1px 2px ${p => p.theme.colors.accent1};
   @media (min-width: 768px) {
+    text-shadow: 3px 3px 5px ${p => p.theme.colors.accent1};
     font-size: 75px;
   }
   font-family: Helvetica, sans-serif;
   font-weight: 700;
-  text-shadow: 3px 3px 5px ${p => p.theme.colors.accent1};
   color: ${p => p.theme.colors.primary};
   padding: 0%;
 `

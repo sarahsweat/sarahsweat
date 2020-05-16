@@ -35,7 +35,11 @@ Home.displayName = "Home"
 const Wrapper = styled.div`
   background-color: ${p => p.theme.colors.accent2};
   width: 100vw;
-  height: 100vh;
+  height: auto;
+  @media (min-width: 768px) {
+    width: 100vw;
+    height: 100vh;
+  }
   overflow: hidden;
   margin: 0%;
   padding: 0%;
