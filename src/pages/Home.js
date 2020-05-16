@@ -43,8 +43,12 @@ const Wrapper = styled.div`
 `
 
 const HeadingWrapper = styled.div`
-  padding: 20px;
-  margin: 20px 200px;
+  padding: 5px;
+  margin: 5;
+  @media (min-width: 768px) {
+    padding: 20px;
+    margin: 20px 150px;
+  }
   border-bottom: solid 2px ${p => p.theme.colors.secondary};
   display: flex;
   flex-direction: column;
@@ -52,8 +56,13 @@ const HeadingWrapper = styled.div`
 `
 
 const ContentWrapper = styled.div`
-  margin: 20px 200px;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: calc(100% - 100px);
+  @media (min-width: 768px) {
+    height: calc(100% - 245px);
+  }
+  overflow-y: scroll;
 `

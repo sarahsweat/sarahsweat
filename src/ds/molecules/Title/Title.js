@@ -5,17 +5,17 @@ import { Heading } from '../../atoms'
 const Title = props => {
   return (
     <Wrapper>
-      <Heading margin="8px" marginBottom="28px">S</Heading>
-      <Heading margin="8px" marginTop="28px">A</Heading>
-      <Heading margin="8px" marginBottom="28px">R</Heading>
-      <Heading margin="8px" marginTop="28px">A</Heading>
-      <Heading margin="8px" marginBottom="28px">H</Heading>
-      <Heading margin="30px">{" "}</Heading>
-      <Heading margin="8px" marginTop="28px">S</Heading>
-      <Heading margin="8px" marginBottom="28px">W</Heading>
-      <Heading margin="8px" marginTop="28px">E</Heading>
-      <Heading margin="8px" marginBottom="28px">A</Heading>
-      <Heading margin="8px" marginTop="28px">T</Heading>
+      <Heading margin="extraSmall" marginBottom="large">S</Heading>
+      <Heading margin="extraSmall" marginTop="large">A</Heading>
+      <Heading margin="extraSmall" marginBottom="large">R</Heading>
+      <Heading margin="extraSmall" marginTop="large">A</Heading>
+      <Heading margin="extraSmall" marginBottom="large">H</Heading>
+      <Heading margin="large">{" "}</Heading>
+      <Heading margin="extraSmall" marginTop="large">S</Heading>
+      <Heading margin="extraSmall" marginBottom="large">W</Heading>
+      <Heading margin="extraSmall" marginTop="large">E</Heading>
+      <Heading margin="extraSmall" marginBottom="large">A</Heading>
+      <Heading margin="extraSmall" marginTop="large">T</Heading>
     </Wrapper>
   )
 }

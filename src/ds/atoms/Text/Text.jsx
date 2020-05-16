@@ -1,14 +1,33 @@
 import styled, {css} from 'styled-components'
 
 const MARGIN_STYLES = css`
-  margin: ${p => p.margin || 0};
-  ${p => p.marginTop && `margin-top: ${p.marginTop};`}
-  ${p => p.marginBottom && `margin-bottom: ${p.marginBottom};`}
+  margin: ${p => p.theme.margin.mobile[p.margin] || 0};
+
+  @media (min-width: 768px) {
+    margin: ${p => p.theme.margin.desktop[p.margin]};
+  }
+
+  ${p => p.marginTop && `
+    margin-top: ${p.theme.margin.mobile[p.marginTop]};
+    @media (min-width: 768px) {
+      margin-top: ${p.theme.margin.desktop[p.marginTop]};
+    }
+  `}
+
+  ${p => p.marginBottom && `
+    margin-bottom: ${p.theme.margin.mobile[p.marginBottom]};
+    @media (min-width: 768px) {
+      margin-bottom: ${p.theme.margin.desktop[p.marginBottom]};
+    }
+  `}
 `
 
 export const Heading = styled.h1`
   ${MARGIN_STYLES}
-  font-size: 75px;
+  font-size: 45px;
+  @media (min-width: 768px) {
+    font-size: 75px;
+  }
   font-family: Helvetica, sans-serif;
   font-weight: 700;
   text-shadow: 3px 3px 5px ${p => p.theme.colors.accent1};
@@ -17,7 +36,10 @@ export const Heading = styled.h1`
 `
 
 export const SubHeading = styled.p`
-  font-size: 30px;
+  font-size: 15px;
+  @media (min-width: 768px) {
+    font-size: 25px;
+  }
   font-family: Helvetica, sans-serif;
   font-weight: 500;
   color: ${p => p.theme.colors.accent1};
@@ -26,8 +48,11 @@ export const SubHeading = styled.p`
   padding: 0%;
 `
 
-export const BodyText = styled.span`
-  font-size: 17px;
+export const BodyText = styled.p`
+  font-size: 12px;
+  @media (min-width: 768px) {
+    font-size: 17px;
+  }
   font-family: Helvetica, sans-serif;
   color: ${p => p.theme.colors.accent3};
 ;
