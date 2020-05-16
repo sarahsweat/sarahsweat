@@ -49,17 +49,19 @@ const HeadingWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-sizing: border-box;
   width: 100%;
-  padding: 15px;
+  min-height: 90px;
+  padding: 10px;
   @media (min-width: 768px) {
     width: 88%;
+    min-height: 170px;
     padding: 20px;
   }
 `
 
 const ContentWrapper = styled.div`
   margin: .5rem;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;

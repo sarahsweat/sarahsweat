@@ -36,24 +36,26 @@ export const Heading = styled.h1`
 `
 
 export const SubHeading = styled.p`
-  font-size: 15px;
+  font-size: 18px;
   @media (min-width: 768px) {
     font-size: 25px;
   }
   font-family: Helvetica, sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   color: ${p => p.theme.colors.accent1};
-  text-shadow: 2px 2px 3px ${p => p.theme.colors.accent2};
+  text-shadow: 2px 2px 3px ${p => p.theme.colors.accent4};
   margin: 0;
   padding: 0%;
 `
 
 export const BodyText = styled.p`
   font-size: 12px;
+  font-weight: 700;
   @media (min-width: 768px) {
     font-size: 17px;
   }
   font-family: Helvetica, sans-serif;
   color: ${p => p.theme.colors.accent3};
+  text-shadow: 0.5px 0.5px 1px ${p => p.theme.colors.accent4};
 ;
 `
