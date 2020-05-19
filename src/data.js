@@ -8,7 +8,7 @@ export const data = {
     },
     {
       title: 'Education',
-      description: ['Flatiron School - Web Development Immersive', 'Florida State University - MS Mechanical Engineering, Minor in Mathematics']
+      description: ['Flatiron School - Web Development Immersive', 'Florida State University - BS Mechanical Engineering, Minor in Mathematics']
     },
     {
       title: 'Links',
