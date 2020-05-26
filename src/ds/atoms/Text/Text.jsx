@@ -13,7 +13,7 @@ export const Heading = styled.h1`
   ${MARGIN_STYLES}
   font-size: 55px;
   letter-spacing: 4px;
-  text-shadow: 1px 1px 2px ${p => p.theme.colors.primary};
+  text-shadow: 2px 2px 3px ${p => p.theme.colors.primary};
   @media (min-width: 768px) {
     text-shadow: 3px 3px 5px ${p => p.theme.colors.primary};
     font-size: 75px;
