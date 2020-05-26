@@ -1,8 +1,5 @@
 const colorPalette = {
-  navy: '#5050A0',
   grey: '#715F72',
-  purple: '#AF55A5',
-  lightPurple: '#BF90E0',
   lightBlue:'#e1f5fa',
   blue: '#27b4db',
   white: '#FFFFFF',
@@ -15,11 +12,6 @@ const colorPalette = {
 export const SSTheme = {
   colors: {
     primary: colorPalette.blue,
-    secondary: colorPalette.lightBlue,
-    accent1: colorPalette.navy,
-    accent2: colorPalette.lightBlue,
-    accent3: colorPalette.grey,
-    accent4: colorPalette.lightLavender,
     white: colorPalette.white,
     lightGray: colorPalette.lightGray,
     mediumGray: colorPalette.mediumGray,

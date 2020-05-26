@@ -25,9 +25,9 @@ export const Heading = styled.h1`
 `
 
 export const SubHeading = styled.p`
-  font-size: 18px;
+  font-size: 15px;
   @media (min-width: 768px) {
-    font-size: 25px;
+    font-size: 35px;
   }
   font-family: Helvetica, sans-serif;
   font-weight: 700;
@@ -48,8 +48,7 @@ export const SectionHeading = styled.p`
   color: ${p => p.theme.colors.darkGray};
   margin: 0;
   padding: 0%;
-  border-bottom: solid 1px ${p => p.theme.colors.accent1};
-
+  border-bottom: solid 1px ${p => p.theme.colors.black};
 `
 
 

@@ -30,12 +30,12 @@ InfoCard.displayName = "InfoCard"
 const Wrapper = styled.div`
   width: 80%;
   background-color: ${p => p.theme.colors.white};
-  border: solid 2px ${p => p.theme.colors.darkGray};
   padding: 20px;
-  box-shadow: 2px 1px 1px ${p => p.theme.colors.primary};
+  box-shadow: 3px 3px 3px ${p => p.theme.colors.primary};
+  border-radius: 3px;
   margin: 10px 20px;
   @media (min-width: 768px) {
     width: 60%;
-    box-shadow: 3px 2px 4px ${p => p.theme.colors.primary};
+    box-shadow: 5px 5px 8px ${p => p.theme.colors.primary};
   }
 `

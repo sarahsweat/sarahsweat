@@ -7,10 +7,9 @@ const Home = () => {
   const { title, subTitle, contentBlocks } = data
   return (
     <Wrapper>
-      <ScrollingWrapper>
         <HeadingWrapper>
-        <Heading margin="medium">{title}</Heading>
-        <SubHeading>{subTitle}</SubHeading>
+          <Heading margin="medium">{title}</Heading>
+          <SubHeading>{subTitle}</SubHeading>
         </HeadingWrapper>
         <ContentWrapper>
           {
@@ -23,7 +22,6 @@ const Home = () => {
             ))
           }
         </ContentWrapper>
-      </ScrollingWrapper>
     </Wrapper>
   )
 }
@@ -33,42 +31,23 @@ export default Home
 Home.displayName = "Home"
 
 const Wrapper = styled.div`
-  background-color: ${p => p.theme.colors.darkGray};
-  width: 100vw;
-  height: auto;
-  @media (min-width: 768px) {
-    width: 100vw;
-    height: 100vh;
-  }
-  overflow: hidden;
+  background-color: ${p => p.theme.colors.black};
+  min-width: 100%;
+  min-height: 100%;
   margin: 0%;
   padding: 0%;
-
-`
-
-const ScrollingWrapper = styled.div`
-  height: 100%;
-  width: inherit;
-  overflow-y: auto;
-  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
 `
-
 
 const HeadingWrapper = styled.div`
-  background-color: ${p => p.theme.colors.darkGray};
   border-bottom: solid 2px ${p => p.theme.colors.lightGray};
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  min-height: 90px;
+  text-align: center;
+  width: 90%;
   padding: 10px;
   @media (min-width: 768px) {
-    width: 88%;
-    min-height: 170px;
+    width: 85%;
     padding: 20px;
   }
 `
