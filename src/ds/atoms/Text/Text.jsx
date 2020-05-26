@@ -4,35 +4,23 @@ const MARGIN_STYLES = css`
   margin: ${p => p.theme.margin.mobile[p.margin] || 0};
 
   @media (min-width: 768px) {
-    margin: ${p => p.theme.margin.desktop[p.margin]};
+    margin: ${p => p.theme.margin.desktop[p.margin] || 0};
   }
 
-  ${p => p.marginTop && `
-    margin-top: ${p.theme.margin.mobile[p.marginTop]};
-    @media (min-width: 768px) {
-      margin-top: ${p.theme.margin.desktop[p.marginTop]};
-    }
-  `}
-
-  ${p => p.marginBottom && `
-    margin-bottom: ${p.theme.margin.mobile[p.marginBottom]};
-    @media (min-width: 768px) {
-      margin-bottom: ${p.theme.margin.desktop[p.marginBottom]};
-    }
-  `}
 `
 
 export const Heading = styled.h1`
   ${MARGIN_STYLES}
-  font-size: 45px;
-  text-shadow: 1px 1px 2px ${p => p.theme.colors.accent1};
+  font-size: 55px;
+  letter-spacing: 4px;
+  text-shadow: 1px 1px 2px ${p => p.theme.colors.primary};
   @media (min-width: 768px) {
-    text-shadow: 3px 3px 5px ${p => p.theme.colors.accent1};
+    text-shadow: 3px 3px 5px ${p => p.theme.colors.primary};
     font-size: 75px;
   }
   font-family: Helvetica, sans-serif;
   font-weight: 700;
-  color: ${p => p.theme.colors.primary};
+  color: ${p => p.theme.colors.white};
   padding: 0%;
 `
 
@@ -44,8 +32,7 @@ export const SubHeading = styled.p`
   font-family: Helvetica, sans-serif;
   font-weight: 700;
   letter-spacing: .8px;
-  color: ${p => p.theme.colors.accent1};
-  text-shadow: 2px 2px 3px ${p => p.theme.colors.accent4};
+  color: ${p => p.theme.colors.white};
   margin: 0;
   padding: 0%;
 `
@@ -58,8 +45,7 @@ export const SectionHeading = styled.p`
   font-family: Helvetica, sans-serif;
   font-weight: 700;
   letter-spacing: 1.1px;
-  color: ${p => p.theme.colors.accent1};
-  text-shadow: 2px 2px 3px ${p => p.theme.colors.accent4};
+  color: ${p => p.theme.colors.darkGray};
   margin: 0;
   padding: 0%;
   border-bottom: solid 1px ${p => p.theme.colors.accent1};
@@ -76,7 +62,6 @@ export const BodyText = styled.p`
     font-size: 17px;
   }
   font-family: Helvetica, sans-serif;
-  color: ${p => p.theme.colors.accent3};
-  text-shadow: 0.5px 0.5px 1px ${p => p.theme.colors.accent4};
+  color: ${p => p.theme.colors.darkGray};
 ;
 `

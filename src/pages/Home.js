@@ -1,16 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
-import {  SubHeading, InfoCard, Title } from '../ds'
+import {  SubHeading, InfoCard, Heading } from '../ds'
 import { data } from '../data'
 
 const Home = () => {
-  const { subTitle, contentBlocks } = data
+  const { title, subTitle, contentBlocks } = data
   return (
     <Wrapper>
       <ScrollingWrapper>
         <HeadingWrapper>
-          <Title />
-          <SubHeading>{subTitle}</SubHeading>
+        <Heading margin="medium">{title}</Heading>
+        <SubHeading>{subTitle}</SubHeading>
         </HeadingWrapper>
         <ContentWrapper>
           {
@@ -33,7 +33,7 @@ export default Home
 Home.displayName = "Home"
 
 const Wrapper = styled.div`
-  background-color: ${p => p.theme.colors.accent2};
+  background-color: ${p => p.theme.colors.darkGray};
   width: 100vw;
   height: auto;
   @media (min-width: 768px) {
@@ -58,8 +58,8 @@ const ScrollingWrapper = styled.div`
 
 
 const HeadingWrapper = styled.div`
-  background-color: ${p => p.theme.colors.accent2};
-  border-bottom: solid 2px ${p => p.theme.colors.secondary};
+  background-color: ${p => p.theme.colors.darkGray};
+  border-bottom: solid 2px ${p => p.theme.colors.lightGray};
   display: flex;
   flex-direction: column;
   align-items: center;

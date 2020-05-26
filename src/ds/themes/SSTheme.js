@@ -3,18 +3,29 @@ const colorPalette = {
   grey: '#715F72',
   purple: '#AF55A5',
   lightPurple: '#BF90E0',
-  lightLavender:'#F0ECF4',
-  lightBlue: '#D5E5F2'
+  lightBlue:'#e1f5fa',
+  blue: '#27b4db',
+  white: '#FFFFFF',
+  lightGray: '#F5F5F5',
+  mediumGray: '#4a4a4a',
+  darkGray: '#333333',
+  black: '#1C1C1C',
 }
 
 export const SSTheme = {
   colors: {
-    primary: colorPalette.purple,
-    secondary: colorPalette.lightPurple,
+    primary: colorPalette.blue,
+    secondary: colorPalette.lightBlue,
     accent1: colorPalette.navy,
     accent2: colorPalette.lightBlue,
     accent3: colorPalette.grey,
     accent4: colorPalette.lightLavender,
+    white: colorPalette.white,
+    lightGray: colorPalette.lightGray,
+    mediumGray: colorPalette.mediumGray,
+    darkGray: colorPalette.darkGray,
+    black: colorPalette.black,
+
   },
   colorPalette,
   margin: {

@@ -29,14 +29,13 @@ InfoCard.displayName = "InfoCard"
 
 const Wrapper = styled.div`
   width: 80%;
-  border-radius: 12px;
-  background-color: ${p => p.theme.colors.accent4};
-  border: solid 3px ${p => p.theme.colors.secondary};
+  background-color: ${p => p.theme.colors.white};
+  border: solid 2px ${p => p.theme.colors.darkGray};
   padding: 20px;
-  box-shadow: 7px 5px 5px ${p => p.theme.colors.primary};
+  box-shadow: 2px 1px 1px ${p => p.theme.colors.primary};
   margin: 10px 20px;
   @media (min-width: 768px) {
     width: 60%;
-    box-shadow: 10px 8px 4px ${p => p.theme.colors.primary};
+    box-shadow: 3px 2px 4px ${p => p.theme.colors.primary};
   }
 `
