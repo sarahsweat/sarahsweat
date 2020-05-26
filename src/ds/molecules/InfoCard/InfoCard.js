@@ -16,6 +16,10 @@ const InfoCard = ({ title, description }) => {
             <a href="https://medium.com/@sarahsweat" target="_blank" rel='noopener noreferrer'>
               <BodyText>Blog</BodyText>
             </a>
+            <a href="https://github.com/sarahsweat/sarahsweat" target="_blank" rel='noopener noreferrer'>
+              <BodyText>Github Repo for this site</BodyText>
+            </a>
+
           </div>
         )
       }

@@ -1,8 +1,6 @@
-# Sarah Sweat personal Webpage
+# Sarah Sweat Personal Webpage
 
-This is a basic 
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a basic React application, implemented with atomic design principles using styled components and is data driven. Style attributes are extracted out to an exchangable theme. It also uses Storybook to view the components used in this project.
 
 ## Available Scripts
 
@@ -39,9 +37,11 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `yarn deploy`
 
-Will deploy gh-pages branch to github pages. Once deployed, you need to update the custom domain to www.sarahsweat.com on github settings. 
+Will deploy gh-pages branch to github pages. Once deployed, you need to update the custom domain to www.sarahsweat.com on github settings. Ensure that the correct doomain is specified in github settings for this repo. 
 
 ## Learn More
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
