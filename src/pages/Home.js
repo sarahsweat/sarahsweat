@@ -32,8 +32,8 @@ Home.displayName = "Home"
 
 const Wrapper = styled.div`
   background-color: ${p => p.theme.colors.black};
-  min-width: 100%;
-  min-height: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
   margin: 0%;
   padding: 0%;
   display: flex;
