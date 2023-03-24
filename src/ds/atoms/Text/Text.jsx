@@ -15,7 +15,7 @@ export const Heading = styled.h1`
   @media (min-width: 768px) {
     font-size: 75px;
   }
-  font-family: Helvetica, sans-serif;
+  font-family: 'Dancing Script', cursive;
   font-weight: 700;
   color: ${p => p.theme.colors.primary};
   padding: 0%;
@@ -26,9 +26,7 @@ export const SubHeading = styled.p`
   @media (min-width: 768px) {
     font-size: 35px;
   }
-  font-family: Helvetica, sans-serif;
-  font-weight: 700;
-  letter-spacing: .8px;
+  font-family: 'Quicksand', sans-serif;
   color: ${p => p.theme.colors.secondary};
   margin: 0;
   padding: 0%;
