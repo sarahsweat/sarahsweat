@@ -35,11 +35,11 @@ const Wrapper = styled.div`
   width: 80%;
   background-color: ${p => p.theme.colors.white};
   padding: 20px;
-  box-shadow: 3px 3px 3px ${p => p.theme.colors.primary};
+  box-shadow: 1px 1px 1px ${p => p.theme.colors.primary};
   border-radius: 3px;
   margin: 10px 20px;
   @media (min-width: 768px) {
     width: 60%;
-    box-shadow: 5px 5px 8px ${p => p.theme.colors.primary};
+    box-shadow: 1px 1px 3px ${p => p.theme.colors.primary};
   }
 `

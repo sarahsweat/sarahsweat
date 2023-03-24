@@ -6,21 +6,18 @@ const MARGIN_STYLES = css`
   @media (min-width: 768px) {
     margin: ${p => p.theme.margin.desktop[p.margin] || 0};
   }
-
 `
 
 export const Heading = styled.h1`
   ${MARGIN_STYLES}
   font-size: 55px;
   letter-spacing: 4px;
-  text-shadow: 2px 2px 3px ${p => p.theme.colors.primary};
   @media (min-width: 768px) {
-    text-shadow: 3px 3px 5px ${p => p.theme.colors.primary};
     font-size: 75px;
   }
   font-family: Helvetica, sans-serif;
   font-weight: 700;
-  color: ${p => p.theme.colors.white};
+  color: ${p => p.theme.colors.primary};
   padding: 0%;
 `
 
@@ -32,7 +29,7 @@ export const SubHeading = styled.p`
   font-family: Helvetica, sans-serif;
   font-weight: 700;
   letter-spacing: .8px;
-  color: ${p => p.theme.colors.white};
+  color: ${p => p.theme.colors.secondary};
   margin: 0;
   padding: 0%;
 `

@@ -11,7 +11,9 @@ const colorPalette = {
 
 export const SSTheme = {
   colors: {
-    primary: colorPalette.blue,
+    primary: '#5EBEC4',
+    secondary: '#F92C85',
+    neutral: '#FDF5DF',
     white: colorPalette.white,
     lightGray: colorPalette.lightGray,
     mediumGray: colorPalette.mediumGray,

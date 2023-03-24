@@ -37,7 +37,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `yarn deploy`
 
-Will deploy gh-pages branch to github pages. Once deployed, you need to update the custom domain to www.sarahsweat.com on github settings. Ensure that the correct doomain is specified in github settings for this repo. 
+Will deploy gh-pages branch to github pages. Once deployed, you need to update the custom domain to www.sarahsweat.com on github settings. Ensure that the correct domain is specified in github settings for this repo. 
 
 ## Learn More
 

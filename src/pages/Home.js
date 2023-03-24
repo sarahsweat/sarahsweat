@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {  SubHeading, InfoCard, Heading } from '../ds'
+import {  SubHeading, InfoCard, Heading, ImageBlock } from '../ds'
 import { data } from '../data'
 
 const Home = () => {
@@ -13,13 +13,15 @@ const Home = () => {
         </HeadingWrapper>
         <ContentWrapper>
           {
-            contentBlocks.map(block => (
+            contentBlocks.map(block => block.type === "text" ? (
               <InfoCard
                 key={block.title}
                 title={block.title}
                 description={block.description}
               />
-            ))
+            ) : 
+              <ImageBlock images={block.images} />
+            )
           }
         </ContentWrapper>
     </Wrapper>
@@ -31,7 +33,7 @@ export default Home
 Home.displayName = "Home"
 
 const Wrapper = styled.div`
-  background-color: ${p => p.theme.colors.black};
+  background-color: ${p => p.theme.colors.neutral};
   min-width: 100vw;
   min-height: 100vh;
   margin: 0%;
