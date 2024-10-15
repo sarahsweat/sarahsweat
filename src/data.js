@@ -12,7 +12,7 @@ export const data = {
     {
       type: 'text',
       title: 'About Me',
-      description: ["In college, I studied Mechanical Engineering, but always loved my coding classes the most. Instead of applying code to hardware, I decided to make a switch and learn how to apply my coding skills on the web development side. I joined Spoon University initially and transitioned to other Discovery brands after their acquisition, primarily with Food Network, working on internal publishing tools. In August 2020 I moved to The New York Times to work as a Senior Full Stack Software Engineer, exploring new products for kids. After that project was sunset in December 2022, I moved to the Cards team within the NYT Storytelling group where I help develop new visual based story formats. I am continuing to learn and grow every day, knowing I made the right choice to switch to software."]
+      description: ["As an accomplished engineering leader with a strong background in full-stack web development, I bring six years of experience in the media industry, where I've successfully built and led diverse teams, working on both legacy and greenfield projects. I am committed to empowering teams and nurturing talent, as evidenced by my initiatives in mentorship and team-building activities. I have a proven track record of engaging in cross-functional partnerships to deliver user-centric solutions, managing vendor relationships, navigating stakeholder expectations and speaking to large groups. In the Fall of 2023, I took a self-funded sabbatical to travel the world and reconnect with family, enriching my perspective and fueling my passion for technology. Currently based in Orlando, Florida."]
     },
     {
       type: 'image-row',
@@ -33,12 +33,12 @@ export const data = {
     {
       type: 'text',
       title: 'Technical Skills',
-      description: ['Javascript - React - AWS (DynamoDB, AppSync, Amplify, Lambda) - Styled Components - Storybook - Nextjs - Ruby - Rails - Redux - MobX - C++ - jQuery - SQL - HTML - CSS']
+      description: [' Javascript/Typescript, React, Next.js, Storybook, GCP(Firebase, Firestore, App Engine, Cloud Run, Cloud Functions, Cloud Storage, etc.), AWS (DynamoDB, Amplify, AppSync, Lambda, CloudFormation), GraphQL, Apollo, TDD, Jest, Styled Components, VS Code, Redux, MobX, Ruby, Ruby on Rails, RSpec, HTML, CSS, SQL, MATLAB, C++, R']
     },
     {
       type: 'text',
       title: 'Interests',
-      description: ['Travel - Photography - Code - Attending Tech Events - Speaking at Events - Music - Golf - Reading']
+      description: ['Travel - Pottery - Photography - Code - Attending Tech Events - Speaking at Events - Music - Golf - Reading']
     },
   ]
 
