@@ -5,7 +5,7 @@ const ImageBlock = ({ images }) => {
   return (
     <Wrapper>
       {images.map(i => 
-        <img src={i} height="200px" width="300px" />
+        <img src={i} alt={i} height="200px" width="300px" />
       )}
     </Wrapper>
   )
