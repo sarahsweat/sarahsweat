@@ -7,7 +7,7 @@ import FlorenceRiver from './images/FlorenceRiver.jpg'
 
 export const data = {
   title: 'Sarah Sweat',
-  subTitle: 'Traveler - Photographer - Software Engineer - Blogger',
+  subTitle: 'Traveler - Software Engineer - Potter',
   contentBlocks: [
     {
       type: 'text',
