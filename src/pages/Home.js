@@ -1,10 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import {  SubHeading, InfoCard, Heading, ImageBlock } from '../ds'
-import { data } from '../data'
+import { data, BLOCK_TYPES } from '../data'
+import JokeGenerator from '../ds/organisms/JokeGenerator/JokeGenerator'
 
 const Home = () => {
   const { title, subTitle, contentBlocks } = data
+
   return (
     <Wrapper>
         <HeadingWrapper>
@@ -13,14 +15,21 @@ const Home = () => {
         </HeadingWrapper>
         <ContentWrapper>
           {
-            contentBlocks.map(block => block.type === "text" ? (
-              <InfoCard
-                key={block.title}
-                title={block.title}
-                description={block.description}
-              />
-            ) : 
-              <ImageBlock images={block.images} />
+            contentBlocks.map(block => {
+              switch (block.type) {
+                case (BLOCK_TYPES.TEXT):
+                  return <InfoCard
+                    key={block.title}
+                    title={block.title}
+                    description={block.description}
+                  />
+                case (BLOCK_TYPES.IMAGE_ROW): 
+                  return <ImageBlock images={block.images} />
+                case (BLOCK_TYPES.JOKE):
+                  return <JokeGenerator title={block.title} />
+                default: return null
+              }
+            }
             )
           }
         </ContentWrapper>
