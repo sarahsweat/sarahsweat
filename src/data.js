@@ -13,7 +13,7 @@ export const BLOCK_TYPES = {
 
 export const data = {
   title: 'Sarah Sweat',
-  subTitle: 'Traveler - Software Engineer - Potter',
+  subTitle: 'Traveler - Engineer - Potter',
   contentBlocks: [
     {
       type: BLOCK_TYPES.TEXT,
