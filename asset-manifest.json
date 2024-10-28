@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.3a190d80.js",
+    "main.js": "/static/js/main.c7c19a3b.js",
     "static/media/Preseli.jpg": "/static/media/Preseli.cfb7100922dfa02bb526.jpg",
     "static/media/TintagelCastle.jpg": "/static/media/TintagelCastle.eedfbb34c4b1741a23a5.jpg",
     "static/media/FlorenceDuomo.jpg": "/static/media/FlorenceDuomo.00446d0c29f1526cf759.jpg",
@@ -10,10 +10,10 @@
     "static/media/FlorenceRiver.jpg": "/static/media/FlorenceRiver.919a645f44c4a869b32f.jpg",
     "index.html": "/index.html",
     "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.3a190d80.js.map": "/static/js/main.3a190d80.js.map"
+    "main.c7c19a3b.js.map": "/static/js/main.c7c19a3b.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.3a190d80.js"
+    "static/js/main.c7c19a3b.js"
   ]
 }
