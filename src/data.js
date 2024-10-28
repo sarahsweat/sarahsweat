@@ -46,6 +46,10 @@ export const data = {
       title: 'Interests',
       description: ['Travel - Pottery - Photography - Code - Attending Tech Events - Speaking at Events - Music - Golf - Reading']
     },
+    {
+      type: BLOCK_TYPES.JOKE,
+      title: 'Get a joke!'
+    },
   ]
 
 }
