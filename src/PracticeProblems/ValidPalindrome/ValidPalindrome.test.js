@@ -11,3 +11,15 @@ test("validPalindrome case 2", () => {
 test("validPalindrome case 3", () => {
   expect(validPalindrome("abcba")).toBe(true);
 });
+
+test("validPalindrome case 4", () => {
+  expect(validPalindrome("racecar")).toBe(true);
+});
+
+test("validPalindrome case 5", () => {
+  expect(validPalindrome("sarah")).toBe(false);
+});
+
+test("validPalindrome case 6", () => {
+  expect(validPalindrome("12abcba21")).toBe(true);
+});
