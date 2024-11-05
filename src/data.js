@@ -9,6 +9,7 @@ export const BLOCK_TYPES = {
   TEXT: "text",
   IMAGE_ROW: "image-row",
   JOKE: "joke",
+  CONTACT: "contact",
 };
 
 export const data = {
@@ -55,6 +56,10 @@ export const data = {
     {
       type: BLOCK_TYPES.JOKE,
       title: "Get a joke!",
+    },
+    {
+      type: BLOCK_TYPES.CONTACT,
+      title: "Contact Me!",
     },
   ],
 };
